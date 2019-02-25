@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head> </head>
+
+    
+    
+    <body>
+    
+<script src='https://lyricsbd.github.io/plyr/tube/plyr.js'></script>
+<link rel='stylesheet' href='https://lyricsbd.github.io/plyr/tube/plyr.css'>
+<link href="https://lyricsbd.github.io/plyr/tube/logo.css" rel="stylesheet" type="text/css" media="all" />
+
+			
+	<script>
+function getParam ( sname )
+{
+  var params = location.search.substr(location.search.indexOf("?")+1);
+  var sval =  params.replace("sv=", "");
+  
+  return sval;
+}
+var sv = getParam("sv");
+
+</script>
+<script>
+  var responseText = ''+sv+'';
+  urlArry = responseText.split(',');
+  start = true;
+  num_of_urlArry = urlArry.length;
+  index_of_urlArry = 0;
+</script>
+<script>
+document.write( '<div id=\"player\" data-plyr-provider=\"\'+sv+\'\" data-plyr-embed-id=\"PSDy4tirdLE\"></div>' );
+</script>
+<script src="https://cdn.plyr.io/3.4.8 /plyr.js"></script>
+<script>const player = new Plyr('#player', {
+controls:["play-large","play","progress","current-time","mute","volume","captions","settings","fullscreen","pip","airplay"],tooltips:{controls:!0},quailty:{ default: 'default', options: ['hd2160', 'hd1440', 'hd1080', 'hd720', 'large', 'medium', 'small', 'tiny', 'default'] }
+});</script>
+
+
+
+
+
+    
+</body>
+
+</html>
