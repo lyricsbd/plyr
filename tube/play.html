@@ -33,14 +33,12 @@ var sv = getParam("sv");
 
 	    
 	    
-	    
-	<script>
-info="<div id=&#34;player&#34; data-plyr-provider=&#34;youtube&#34; data-plyr-embed-id=&#34;PSDy4tirdLE&#34;>"
-
-document.write(info)
-</script>    
-	    
-	  <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="PSDy4tirdLE">  
+<script type="text/javascript">
+<!-- 
+document.writeln("<div id=\"player\" data-plyr-provider=\"youtube\" data-plyr-embed-id=\"'+sv+'\"></div> "); 
+document.writeln("  ");
+ // -->
+</script>
 	    
 	    
 <script>const player = new Plyr('#player', {
